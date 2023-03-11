@@ -1,0 +1,61 @@
+/* ==UserStyle==
+@name         Tumblr : Center Dashboard
+@version      1.0
+@namespace    userstyles.world/user/lensdeer
+@description  Center Tumblr's Dashboard and remove sidebar bloat
+@author       lensdeer
+@license      OQL (https://oql.avris.it/license/v1.1)
+@supportURL   http://github.com/MarshDeer/tumblr-center-dashboard/issues/new
+
+@preprocessor stylus
+
+@var checkbox hide-recs 'Remove blog recommendations' 1
+@var checkbox hide-radar 'Remove Radar' 1
+@var checkbox hide-ads 'Remove Sidebar Ads' 1
+@var checkbox hide-nav 'Remove About/Apps/Legal/Privacy links' 1
+@var checkbox center-dash 'Center dashboard' 1
+==/UserStyle== */
+
+@-moz-document domain("tumblr.com") {
+	/* Hide Blog Recommendations */
+		if hide-recs {
+			.FZkjV:nth-child(1) {
+				display:	none;
+			}
+		}
+
+	/* Hide Radar */
+		if hide-radar {
+			.FZkjV:nth-child(2) {
+				display:	none;
+			}
+		}
+
+	/* Hide Sidebar Ads */
+		if hide-ads {
+			.ohi9S {
+				display:	none;
+			}
+		}
+
+	/* Hide Navigation Links */
+		if hide-nav {
+			aside footer {
+				display:	none !important;
+			}
+		}
+
+	/* Center Dashboard */
+		if center-dash {
+			.T5uZR {
+				margin:		auto;
+			}
+			.gPQR5 {
+				width:		max-content;
+			}
+			.e1knl {
+				position:	fixed; /* There might be a better option for this */
+				right:		0;
+			}
+		}
+}
