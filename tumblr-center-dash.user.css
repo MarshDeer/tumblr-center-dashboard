@@ -54,8 +54,10 @@
 				width:		max-content;
 			}
 			.e1knl {
-				position:	fixed; /* There might be a better option for this */
+				position:	fixed; /* There might be a better option for this. TODO: find a more elegant solution */
 				right:		0;
 			}
+			.lSyOz {
+				width:		500px; /* Hopefully fixes a small bug. TODO: find a more cleaner solution */
 		}
 }
