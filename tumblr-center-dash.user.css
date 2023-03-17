@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Tumblr : Center Dashboard
-@version      1.2
+@version      1.3
 @namespace    userstyles.world/user/lensdeer
 @description  Center Tumblr's Dashboard and remove sidebar bloat
 @author       lensdeer
@@ -55,7 +55,7 @@
 			}
 			.e1knl {
 				position:	fixed; /* There might be a better option for this. TODO: find a more elegant solution */
-				right:		0;
+				right:		2.5vw;
 			}
 			.lSyOz {
 				width:		500px; /* Hopefully fixes a small bug. TODO: find a more cleaner solution */
