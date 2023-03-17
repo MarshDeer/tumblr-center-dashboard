@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name         Tumblr : Center Dashboard
-@version      1.3
+@version      1.4
 @namespace    userstyles.world/user/lensdeer
-@description  Center Tumblr's Dashboard and remove sidebar bloat
+@description  Center Tumblr's Dashboard, remove sidebar bloat and move chat to the left
 @author       lensdeer
 @license      OQL (https://oql.avris.it/license/v1.1)
 @supportURL   http://github.com/MarshDeer/tumblr-center-dashboard/issues/new
@@ -14,6 +14,7 @@
 @var checkbox hide-ads 'Remove Sidebar Ads' 1
 @var checkbox hide-nav 'Remove About/Apps/Legal/Privacy links' 1
 @var checkbox center-dash 'Center dashboard' 1
+@var checkbox left-chat 'Move chat to the left (REQUIRES CENTERED DASH / ONLY ON WIDE SCREENS)' 1
 ==/UserStyle== */
 
 @-moz-document domain("tumblr.com") {
@@ -59,5 +60,45 @@
 			}
 			.lSyOz {
 				width:		500px; /* Hopefully fixes a small bug. TODO: find a more cleaner solution */
+		}
+	
+	/* Move chat to the left */
+		if center-dash {
+			if chat-left {
+				@media screen and (min-width: 1280px) {
+					.cwvO0 { /* chat container */
+						left: 2vw;
+						right: unset;
+						display: grid;
+						grid-row-gap: 2%;
+						margin-bottom: 11px;
+					}
+
+					.j17Mp { /* open chat */
+						position: unset;
+					}
+
+					.Gdf0h { /* bubbles container */
+						display: grid;
+						grid-template-columns: max-content max-content max-content max-content max-content;
+						grid-column-gap: 50%;
+						grid-row-gap: 25%;
+					}
+
+					.aiKUG { /* individual bubbles */
+						position: unset;
+					}
+
+					@media screen and (max-width: 1320px) { /* avoids overlap with avatars */
+						.cwvO0 {
+							left: 0;
+						}
+					}
+				}
+			}
+		/* TODO:
+		 *  - Animation when switching between chat
+		 *  - Make it not break for >10 bubbles (+ 1 open chat)
+		 */
 		}
 }
