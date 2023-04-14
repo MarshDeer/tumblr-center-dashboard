@@ -66,34 +66,26 @@
 	/* Move chat to the left */
 		if center-dash {
 			if chat-left {
-				@media screen and (min-width: 1280px) {
-					.cwvO0 { /* chat container */
-						left: 2vw;
-						right: unset;
-						display: grid;
-						grid-row-gap: 2%;
-					}
+				.cwvO0 { /* chat container */
+					left: 2vw;
+					right: unset;
+					display: grid;
+					grid-row-gap: 2%;
+				}
 
-					.j17Mp { /* open chat */
-						position: unset;
-					}
+				.j17Mp { /* open chat */
+					position: unset;
+				}
 
-					.Gdf0h { /* bubbles container */
-						display: grid;
-						grid-template-columns: max-content max-content max-content max-content max-content;
-						grid-column-gap: 50%;
-						grid-row-gap: 25%;
-					}
+				.Gdf0h { /* bubbles container */
+					display: grid;
+					grid-template-columns: max-content max-content max-content max-content max-content;
+					grid-column-gap: 50%;
+					grid-row-gap: 25%;
+				}
 
-					.aiKUG { /* individual bubbles */
-						position: unset;
-					}
-
-					@media screen and (max-width: 1320px) { /* avoids overlap with avatars */
-						.cwvO0 {
-							left: 0;
-						}
-					}
+				.aiKUG { /* individual bubbles */
+					position: unset;
 				}
 			}
 		/* TODO:
