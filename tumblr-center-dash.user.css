@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Tumblr : Center Dashboard
-@version      1.7
+@version      1.7.1
 @namespace    userstyles.world/user/lensdeer
 @description  Center Tumblr's Dashboard, remove sidebar bloat and move chat to the left
 @author       lensdeer
@@ -112,7 +112,7 @@
 			.xved4,
 			.qNKBC,
 			.dzJuF .xXvvU .Zemfu {
-				border-rodius:	5px;
+				border-radius:	5px;
 			}
 		}
 }
