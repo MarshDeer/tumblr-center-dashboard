@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Tumblr : Center Dashboard
-@version      1.6
+@version      1.7
 @namespace    userstyles.world/user/lensdeer
 @description  Center Tumblr's Dashboard, remove sidebar bloat and move chat to the left
 @author       lensdeer
@@ -15,7 +15,8 @@
 @var checkbox hide-nav 'Remove About/Apps/Legal/Privacy links' 1
 @var checkbox center-dash 'Center dashboard' 1
 @var checkbox left-chat 'Move chat to the left (REQUIRES CENTERED DASH / ONLY ON WIDE SCREENS)' 1
-@var checkbox unbubble-notes '*unbubbles your note count*' 1
+@var checkbox unbubble-notes 'Remove note count bubble' 1
+@var checkbox unround-editor 'Unround post editor buttons' 1
 ==/UserStyle== */
 
 @-moz-document domain("tumblr.com") {
@@ -103,6 +104,15 @@
 			}
 			.rlv6m .ePsyd {
 				border-radius:	5px;
+			}
+		}
+
+	/* Unround post editor buttons */
+		if unround-editor {
+			.xved4,
+			.qNKBC,
+			.dzJuF .xXvvU .Zemfu {
+				border-rodius:	5px;
 			}
 		}
 }
