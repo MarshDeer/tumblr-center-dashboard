@@ -1,3 +1,6 @@
+# THIS USERSTYLE WAS MADE OBSOLETE BY THE DASHBOARD REDESIGN.
+[enchanted-sword/dashboard-unfucker](https://github.com/enchanted-sword/dashboard-unfucker) serves the same functionality.
+
 # tumblr-center-dash.user.css
 
 Simple userstyle to hide Tumblr's sidebar and center the Dashboard.<br>
